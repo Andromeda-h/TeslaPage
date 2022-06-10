@@ -1,0 +1,230 @@
+.section-one .nav, .section-one .nav .nav-sub-menu ul, .section-one .nav .nav-menu ul, .section-one .details-container, .section-two .text-container, .section-three {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.section-one .details-container .flex, .section-three .text-container-three, .section-three .text-container-three .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Gotham", sans-serif;
+  color: white;
+}
+
+html {
+  min-height: 100vh;
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
+.section-one {
+  background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/b614dd66-cc50-4cba-8c15-186b95bb4a8d/bvlatuR/std/0x0/b614dd66-cc50-4cba-8c15-186b95bb4a8d");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.section-one .nav {
+  justify-content: space-between;
+  width: 100vw;
+  height: 60px;
+  position: relative;
+  padding: 0 20px;
+}
+.section-one .nav .nav-logo img {
+  position: absolute;
+  top: -20;
+  filter: brightness(0) invert(1);
+}
+.section-one .nav .nav-sub-menu ul li, .section-one .nav .nav-menu ul li {
+  margin: 0.1rem;
+  font-weight: 500;
+  padding: 10px;
+  transition: all 0.6s;
+  border-radius: 20px;
+}
+.section-one .nav .nav-sub-menu ul li:hover, .section-one .nav .nav-menu ul li:hover {
+  background-color: rgba(245, 245, 245, 0.411);
+}
+.section-one .tittle-container {
+  text-align: center;
+  margin-top: 70px;
+}
+.section-one .tittle-container h1 {
+  font-size: 45px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0 0 15 0;
+}
+.section-one .details-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50;
+  text-align: center;
+}
+.section-one .details-container .flex {
+  margin: 40;
+}
+.section-one .details-container .flex i {
+  margin: 0;
+  margin-top: 9px;
+  font-size: 20px;
+}
+.section-one .details-container .flex h2 {
+  margin-bottom: 10px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.section-one .details-container .button-container button {
+  width: 180px;
+  padding: 10 0 12;
+  text-transform: uppercase;
+  font-size: 13px;
+  background: transparent;
+  border-radius: 50px;
+  border: solid 3px;
+  margin-left: 30px;
+  transition: all 0.6s;
+}
+.section-one .details-container .button-container button:hover {
+  background: rgba(245, 245, 245, 0.26);
+}
+.section-one .row-container {
+  position: absolute;
+  left: 50%;
+  bottom: 15;
+  font-size: 20;
+  opacity: 0.8;
+}
+
+.animate__animated.animate__shakeY {
+  --animate-duration: 2s;
+}
+
+.section-two {
+  width: 100vw;
+  min-height: 100vh;
+}
+.section-two .image-container img {
+  width: 100vw;
+  height: 80vh;
+  object-fit: cover;
+}
+.section-two .text-container {
+  height: 20vh;
+  justify-content: center;
+}
+.section-two .text-container h2, .section-two .text-container p, .section-two .text-container a {
+  color: black;
+}
+.section-two .text-container .section {
+  margin: 0 80px;
+}
+.section-two .text-container .text-one-section {
+  margin-top: 40px;
+  max-width: 700px;
+}
+.section-two .text-container .text-one-section p {
+  font-size: 17px;
+}
+.section-two .text-container .text-one-section h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.section-two .text-container .text-one-section button {
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50px;
+  color: black;
+  border: 3px solid black;
+  margin-top: 20;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-size: 14;
+  padding-bottom: 3;
+}
+.section-two .text-container .text-one-section button:hover {
+  background: black;
+  color: white;
+}
+.section-two .text-container .text-two-section {
+  width: 600px;
+  text-align: start;
+}
+.section-two .text-container .text-two-section p a {
+  text-decoration: underline;
+}
+
+.section-three h3, .section-three h2, .section-three p {
+  color: black;
+}
+.section-three .text-container-three {
+  justify-content: space-between;
+  padding: 40;
+  width: 25vw;
+  height: 100vh;
+}
+.section-three .text-container-three .top h3 {
+  font-weight: 400;
+  opacity: 0.7;
+}
+.section-three .text-container-three .top h2 {
+  font-weight: 450;
+  padding: 5 0 20;
+}
+.section-three .text-container-three .top p {
+  opacity: 0.8;
+}
+.section-three .text-container-three .bottom button {
+  margin: 5;
+  padding: 8;
+  min-width: 20vw;
+  border-radius: 50px;
+  border: 3px solid black;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.651);
+  text-transform: uppercase;
+  font-size: 14;
+  opacity: 0.9;
+  transition: all 0.6s;
+}
+.section-three .text-container-three .bottom button:hover {
+  background: black;
+  color: white;
+}
+.section-three .image-container-three img {
+  width: 75vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.chat-container {
+  position: fixed;
+  bottom: 80;
+  right: 50;
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+}
+.chat-container ion-icon {
+  color: rgb(0, 0, 0);
+  background: white;
+  padding: 8;
+  border-radius: 50%;
+  font-size: 35;
+  box-shadow: 0px 0px 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
